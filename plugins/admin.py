@@ -90,8 +90,8 @@ async def vip3(bot,update):
 async def cp1(bot,update):
 	id = update.message.reply_to_message.text.split("/ceasepower")
 	user_id = id[1].replace(" ", "")
-	inlimit  = 524288000
-	uploadlimit(int(user_id),524288000)
+	inlimit  = 10737418240
+	uploadlimit(int(user_id),10737418240)
 	usertype(int(user_id),"**ACCOUNT DOWNGRADED**")
 	addpre(int(user_id))
 	await update.message.edit("ACCOUNT DOWNGRADED\nThe user can only use 100MB/day from Data qota")
